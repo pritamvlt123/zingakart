@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00023d</color>
+    <color name="colorPrimaryDark">#00023d</color>
+    <color name="colorAccent">#00023d</color>
+    <color name="material_light_primary_text">#DE000000</color>
+    <color name="material_light_hint_text">#61000000</color>
+    <color name="material_light_active_icon">#FFFFFF</color>
+    <color name="material_ripple_light">#1F000000</color>
+    <color name="divider_color">#1F000000</color>
+    <color name="active_icon_color">#8A000000</color>
+    <color name="cards_and_dialogs_color">@android:color/white</color>
+    <color name="quantum_grey_600">#B6B4B4</color>
+    <color name="btn_cart">#3F51B5</color>
+    <color name="btn_buy">#475EDC</color>
+
+    <color name="card_text_color">#FFFFFF</color>
+    <color name="card_label_color">#D4D9DC</color>
+    <color name="card_cvv_color">#383838</color>
+    <color name="CTA_text">#FFFFFF</color>
+    <color name="CTA_bg">#32C25E</color>
+
+    <color name="White">#FFFFFF</color>
+    <color name="Yellow">#dec600</color>
+    <color name="Orange">#f0ad4e</color>
+    <color name="DeepPink">#FF1493</color>
+    <color name="Red">#d9534f</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="Brown">#A52A2A</color>
+    <color name="Gray">#808080</color>
+    <color name="DimGray">#696969</color>
+    <color name="blue">#428bca</color>
+    <color name="fb_blue">#3b5998</color>
+    <color name="Teal">#008080</color>
+    <color name="Blue">#0000FF</color>
+    <color name="Black">#000000</color>
+    <color name="black_87">#de000000</color>
+    <color name="lighSkyTransparent">#cf22adcc</color>
+    <color name="Green">#5cb85c</color>
+</resources>

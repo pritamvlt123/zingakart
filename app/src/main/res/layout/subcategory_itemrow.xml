@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/constraint"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_names"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/no_image"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/sale_logo" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_discounted_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="\u20B9 222"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/myRatingBar"
+        app:layout_constraintStart_toStartOf="@+id/item_names"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_category"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <ImageView
+            android:id="@+id/add_favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/remove_favorite"
+            app:layout_constraintEnd_toEndOf="@+id/item_names"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/item_names"
+            app:layout_constraintTop_toBottomOf="@+id/item_names" />
+
+    <TextView
+        android:id="@+id/tv_actual_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="\u20B9 123"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/myRatingBar"
+        app:layout_constraintEnd_toEndOf="@+id/item_names"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/tv_discounted_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_category"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:lines="3"
+            android:text="Item Name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/item_names"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/item_names"
+            app:layout_constraintTop_toBottomOf="@+id/item_names" />
+
+        <TextView
+            android:id="@+id/tv_item_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="T-Shirt"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_item_name"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_name" />
+
+    <RatingBar
+        android:id="@+id/myRatingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_discounted_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_category" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="44dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

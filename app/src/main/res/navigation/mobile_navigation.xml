@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.zingakart.Fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_item_fragment"
+        android:name="com.example.zingakart.Fragments.ItemDescriptionFragment"
+        android:label="Items"
+        tools:layout="@layout/fragment_itemdescription" />
+
+    <fragment
+        android:id="@+id/nav_featured_fragment"
+        android:name="com.example.zingakart.Fragments.FeaturedItemsFragment"
+        android:label="Featured Items"
+        tools:layout="@layout/fragment_featureditems" />
+
+
+    <fragment
+        android:id="@+id/nav_wish_list"
+        android:name="com.example.zingakart.Fragments.WishListFragment"
+        android:label="Wishlist"
+        tools:layout="@layout/fragment_wishlist" />
+
+</navigation>

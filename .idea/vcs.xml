@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/CigarDriver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CigarProject/cigar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FoodOPD_Android_v1.1/FoodOPD_app/FoodOPD_owner" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FoodOPD_Android_v1.1/FoodOPD_app/FoodopdCustomer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Kiosk_IsolveApplication" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Recovered data 08-20 19_54_11/Deleted files/K12" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Recovered data 08-20 19_54_11/Deleted files/K12/K12_Android_Projects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Recovered data 08-20 19_54_11/Deleted files/K12/K12_Android_Projects/lets_eduvate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Recovered data 08-20 19_54_11/Deleted files/K12/k12parentportal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ymoc" vcs="Git" />
+  </component>
+</project>

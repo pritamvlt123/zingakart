@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_wish_list"
+            android:title="Your Wish List" />
+<!--        <item-->
+<!--            android:id="@+id/nav_baby_and_kids"-->
+<!--            android:title="Baby &amp; Kids" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_home_and_kitchen"-->
+<!--            android:title="Home &amp; Kithchen" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_electronics"-->
+<!--            android:title="Electronics" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_sports_and_fitness"-->
+<!--            android:title="Sports &amp; Fitness" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_tea_and_coffee"-->
+<!--            android:title="Tea &amp; Coffee " />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_daily_essentials"-->
+<!--            android:title="Daily Essentials" />-->
+    </group>
+</menu>

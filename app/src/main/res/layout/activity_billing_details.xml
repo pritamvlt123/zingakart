@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="-40dp"
+            android:src="@drawable/logo" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="Billing Details"
+        android:textColor="@color/Black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <View
+        style="@style/Divider_Horizontal_light"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/shippingDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="@drawable/rectengle_radius_black"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Shiping Details"
+                            android:textColor="@color/Black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDefaultAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectengle_radius_black"
+                        android:padding="15dp"
+                        android:text="Your Address"
+                        android:textColor="@color/Black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectengle_radius_black"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:lineSpacingExtra="9.3sp"
+                            android:text="Name *"
+                            android:textColor="#999999"
+                            android:textSize="10.7sp" />
+
+                        <EditText
+                            android:id="@+id/etDefaultUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusableInTouchMode="true"
+                            android:inputType="text"
+                            android:textColor="#666666"
+                            android:textSize="13.4sp" />
+
+                        <View
+                            style="@style/Divider_Horizontal_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="9dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:lineSpacingExtra="9.3sp"
+                            android:text="Shipping Address *"
+                            android:textColor="#999999"
+                            android:textSize="10.7sp" />
+
+                        <EditText
+                            android:id="@+id/etDefaultAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusableInTouchMode="true"
+                            android:inputType="text"
+                            android:textColor="#666666"
+                            android:textSize="13.4sp" />
+
+                        <View
+                            style="@style/Divider_Horizontal_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="9dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:lineSpacingExtra="9.3sp"
+                            android:text="City *"
+                            android:textColor="#999999"
+                            android:textSize="10.7sp" />
+
+                        <EditText
+                            android:id="@+id/etDefaultCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusableInTouchMode="true"
+                            android:inputType="text"
+                            android:textColor="#666666"
+                            android:textSize="13.4sp" />
+
+                        <View
+                            style="@style/Divider_Horizontal_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="9dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:lineSpacingExtra="9.3sp"
+                            android:text="State *"
+                            android:textColor="#999999"
+                            android:textSize="10.7sp" />
+
+                        <EditText
+                            android:id="@+id/etDefaultState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusableInTouchMode="true"
+                            android:inputType="text"
+                            android:textColor="#666666"
+                            android:textSize="13.4sp" />
+
+                        <View
+                            style="@style/Divider_Horizontal_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="9dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:lineSpacingExtra="9.3sp"
+                            android:text="Zipcode *"
+                            android:textColor="#999999"
+                            android:textSize="10.7sp" />
+
+                        <EditText
+                            android:id="@+id/etDefaultZipcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusableInTouchMode="true"
+                            android:inputType="numberSigned"
+                            android:textColor="#666666"
+                            android:textSize="13.4sp" />
+
+                        <View
+                            style="@style/Divider_Horizontal_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="9dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:lineSpacingExtra="9.3sp"
+                            android:text="Landmark"
+                            android:textColor="#999999"
+                            android:textSize="10.7sp" />
+
+                        <EditText
+                            android:id="@+id/etDefaultLandmark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusableInTouchMode="true"
+                            android:inputType="text"
+                            android:text=""
+                            android:textColor="#666666"
+                            android:textSize="13.4sp" />
+
+                        <View
+                            style="@style/Divider_Horizontal_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="9dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:lineSpacingExtra="9.3sp"
+                            android:text="Country *"
+                            android:textColor="#999999"
+                            android:textSize="10.7sp" />
+
+                        <EditText
+                            android:id="@+id/etDefaultCountry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusableInTouchMode="true"
+                            android:inputType="text"
+                            android:textColor="#666666"
+                            android:textSize="13.4sp" />
+
+                        <View
+                            style="@style/Divider_Horizontal_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="9dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:lineSpacingExtra="9.3sp"
+                            android:text="Mobile Number *"
+                            android:textColor="#999999"
+                            android:textSize="10.7sp" />
+
+                        <EditText
+                            android:id="@+id/etDefaultNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusableInTouchMode="true"
+                            android:inputType="numberSigned"
+                            android:textColor="#666666"
+                            android:textSize="13.4sp" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cbSameAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Same Address" />
+
+                    <TextView
+                        android:id="@+id/tvAddNewAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectengle_radius_black"
+                        android:padding="15dp"
+                        android:text="Shipping Address"
+                        android:textColor="@color/Black"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/addNewAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectengle_radius_black"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:lineSpacingExtra="9.3sp"
+                                android:text="Name *"
+                                android:textColor="@color/black_87"
+                                android:textSize="10.7sp" />
+
+                            <EditText
+                                android:id="@+id/etUserName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusableInTouchMode="true"
+                                android:inputType="text"
+                                android:textColor="#666666"
+                                android:textSize="13.4sp" />
+
+                            <View
+                                style="@style/Divider_Horizontal_light"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="9dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:lineSpacingExtra="9.3sp"
+                                android:text="Shipping Address *"
+                                android:textColor="@color/black_87"
+                                android:textSize="10.7sp" />
+
+                            <EditText
+                                android:id="@+id/etShipingAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusableInTouchMode="true"
+                                android:inputType="text"
+                                android:textColor="#666666"
+                                android:textSize="13.4sp" />
+
+                            <View
+                                style="@style/Divider_Horizontal_light"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="9dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:lineSpacingExtra="9.3sp"
+                                android:text="City *"
+                                android:textColor="#999999"
+                                android:textSize="10.7sp" />
+
+                            <EditText
+                                android:id="@+id/etShipingCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusableInTouchMode="true"
+                                android:inputType="text"
+                                android:textColor="#666666"
+                                android:textSize="13.4sp" />
+
+                            <View
+                                style="@style/Divider_Horizontal_light"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="9dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:lineSpacingExtra="9.3sp"
+                                android:text="State *"
+                                android:textColor="#999999"
+                                android:textSize="10.7sp" />
+
+                            <EditText
+                                android:id="@+id/etShipingState"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusableInTouchMode="true"
+                                android:inputType="text"
+                                android:textColor="#666666"
+                                android:textSize="13.4sp" />
+
+                            <View
+                                style="@style/Divider_Horizontal_light"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="9dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:lineSpacingExtra="9.3sp"
+                                android:text="Zipcode *"
+                                android:textColor="#999999"
+                                android:textSize="10.7sp" />
+
+                            <EditText
+                                android:id="@+id/etZipcode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusableInTouchMode="true"
+                                android:inputType="numberSigned"
+                                android:textColor="#666666"
+                                android:textSize="13.4sp" />
+
+                            <View
+                                style="@style/Divider_Horizontal_light"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="9dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:lineSpacingExtra="9.3sp"
+                                android:text="Landmark"
+                                android:textColor="#999999"
+                                android:textSize="10.7sp" />
+
+                            <EditText
+                                android:id="@+id/etShipingLandmark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusableInTouchMode="true"
+                                android:inputType="text"
+                                android:text=""
+                                android:textColor="#666666"
+                                android:textSize="13.4sp" />
+
+                            <View
+                                style="@style/Divider_Horizontal_light"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="9dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:lineSpacingExtra="9.3sp"
+                                android:text="Country *"
+                                android:textColor="#999999"
+                                android:textSize="10.7sp" />
+
+                            <EditText
+                                android:id="@+id/etCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusableInTouchMode="true"
+                                android:inputType="text"
+                                android:textColor="#666666"
+                                android:textSize="13.4sp" />
+
+                            <View
+                                style="@style/Divider_Horizontal_light"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="9dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:lineSpacingExtra="9.3sp"
+                                android:text="Mobile Number *"
+                                android:textColor="#999999"
+                                android:textSize="10.7sp" />
+
+                            <EditText
+                                android:id="@+id/etShipingNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:focusableInTouchMode="true"
+                                android:inputType="numberSigned"
+                                android:textColor="#666666"
+                                android:textSize="13.4sp" />
+
+                            <View
+                                style="@style/Divider_Horizontal_light"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="9dp" />
+
+                            <Button
+                                android:id="@+id/btnSubmitAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="10dp"
+                                android:backgroundTint="@color/blue"
+                                android:text="Submit"
+                                android:textAllCaps="false"
+                                android:textColor="@color/White" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnCheckOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/blue"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

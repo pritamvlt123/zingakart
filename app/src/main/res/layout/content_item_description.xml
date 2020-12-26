@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/constraint"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/item_names"
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                app:cardCornerRadius="6dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="35dp"
+                android:elevation="8dp">
+
+
+                <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_marginLeft="3dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="-1dp" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:lines="2"
+                    android:textColor="@color/Black"
+                    android:text="Item Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_item_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="T-Shirt"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="M.R.P.:"
+                    android:fontFamily="sans-serif"
+                    android:minLines="2"
+                    android:textColor="@color/Black"
+                    android:lines="2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_discounted_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="86dp"
+                    android:layout_marginTop="-44dp"
+                    android:fontFamily="sans-serif"
+                    android:lines="1"
+                    android:minLines="2"
+                    android:text=""
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Sale Price:"
+                    android:fontFamily="sans-serif"
+                    android:minLines="2"
+                    android:textColor="@color/Black"
+                    android:lines="2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_actual_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:text=""
+                    android:textColor="@color/Red"
+                    android:layout_marginTop="-44dp"
+                    android:lines="2"
+                    android:minLines="2"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Product Key Features:"
+                    android:textSize="25sp"
+                    android:textColor="@color/Black"/>
+
+                <TextView
+                    android:id="@+id/tv_short_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:textColor="@color/Black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_size"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:entries="@array/Size"
+                    android:paddingRight="10dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="20dp"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_description"
+                    app:layout_constraintHorizontal_bias="0.083"
+                    app:layout_constraintStart_toStartOf="@+id/tv_description"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="280dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/ic_baseline_location_on_24"/>
+
+                    <TextView
+                        android:id="@+id/tv_available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available at"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif"/>
+
+                    <ImageView
+                        android:id="@+id/iv_checklocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_edit_24"
+                        android:layout_marginLeft="210dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_pincode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="100dp"/>
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="80dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ic_baseline_done_24"/>
+
+                    <TextView
+                        android:id="@+id/tv_cod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="60dp"
+                        android:text="Cash on Delivery Available"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/number_button"
+                    android:layout_width="200dp"
+                    app:backGroundColor="#BDBABA"
+                    app:textSize="8sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    app:initialNumber="1"
+                    app:finalNumber="100"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/im_favorite"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginLeft="300dp"
+                    android:src="@drawable/remove_favorite"/>
+
+                <Button
+                    android:id="@+id/btn_addcart"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:background="#787878"
+                    android:text="Add to Cart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:backgroundTint="#3F51B5"
+                    android:textAlignment="center"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_buynow"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:background="#787878"
+                    android:text="Buy Now"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description:"
+                    android:textSize="20sp"
+                    android:textColor="@color/Black"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_long_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <fragment
+        android:id="@+id/nav_item_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
